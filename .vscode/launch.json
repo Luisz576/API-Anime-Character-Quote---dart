@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "api-anime-character-quote",
+            "cwd": "api-anime-character-quote",
+            "request": "launch",
+            "type": "dart",
+            "program": "bin/api_anime_character_quote.dart"
+        }
+    ]
+}
