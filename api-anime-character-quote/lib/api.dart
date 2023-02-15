@@ -8,7 +8,7 @@ typedef ApiHandle = FutureOr<Response> Function(Request);
 class Api{
   final String _address;
   final int _port;
-  ApiHandle? _handle = null;
+  ApiHandle? _handle;
 
   String get address => _address;
   int get port => _port;
@@ -28,10 +28,5 @@ class Api{
     final api = Api(address, port);
     api.run(handle);
     return api;
-  }
-
-  static FutureOr<Response> useDefault(Request request){
-    //TODO:
-    return Response(404);
   }
 }
